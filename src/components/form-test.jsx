@@ -8,6 +8,7 @@ class FormTest extends Component {
     handleSubmit = e => {
         e.preventDefault()
         console.log('Submitted', this.state.userInput)
+        this.setState( this.state.userInput = { email: '', name: '' })
     }
 
     handleChange = e => {
@@ -25,7 +26,7 @@ class FormTest extends Component {
                     <input value={this.state.userInput.name} onChange={this.handleChange} type="text" className='form-control' name="name" id="name" />
                     <label htmlFor="email" className='form-label'>Email:</label>
                     <input value={this.state.userInput.email} onChange={this.handleChange} type="email" className='form-control' name="email" id="email" />
-                    <button  className='btn btn-primary mt-3'>Submit</button>
+                    <button  className='btn btn-primary mt-3'>Submit (Console Log)</button>
                 </form>
 
             </div>
