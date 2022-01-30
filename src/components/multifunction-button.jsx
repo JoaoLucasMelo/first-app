@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { useAlert } from 'react-alert'
 
 const ButtonComponent = (props) => {
