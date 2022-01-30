@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import FormTest from './components/form-test';
+import IncreaseComponent from './components/increase-component';
+import NavBar from './components/navbar';
+import ApiPostsTest from './components/api-posts-test';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (
+    <div className='container-fluid'>
+      <div className='row'>
+      <NavBar />
+        <div className="col-6">
+      <IncreaseComponent />
+      <FormTest />
+        </div>
+        <div className="col-6">
+      <ApiPostsTest />
+        </div>
+      </div>
     </div>
-  );
+    )
 }
 
 export default App;

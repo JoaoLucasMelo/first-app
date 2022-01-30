@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.postsbox{
+  width: 90%;
+  margin: 1vw;
+  height: 40vh;
+}
+.scrollbar {
+  overflow-y: scroll;
+  height: 50vh;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3391dd;
+  border-radius: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
