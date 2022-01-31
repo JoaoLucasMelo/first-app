@@ -17,7 +17,7 @@ class IncreaseComponent extends Component {
 
     render() { 
         return (
-            <div className='p-3'>
+            <div className='p-3 pt-0'>
                 <h1>Increase Button Test</h1>
                 <div className='d-flex align-items-center'>
                     <p className='p-2 m-0 fs-2'>{ this.state.startingNumber }</p>

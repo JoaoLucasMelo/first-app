@@ -3,6 +3,7 @@ import FormTest from './components/form-test';
 import IncreaseComponent from './components/increase-component';
 import NavBar from './components/navbar';
 import ApiPostsTest from './components/api-posts-test';
+import FunctionComponent from './components/test-function-component';
 import ButtonComponent from './components/multifunction-button';
 import { transitions, positions, Provider as AlertProvider, types } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
@@ -24,11 +25,11 @@ function App() {
     <div className='container-fluid'>
       <div className='row'>
       <NavBar />
-        <div className="col-6">
+        <div className="col-md-6">
       <IncreaseComponent />
       <FormTest />
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
       <ApiPostsTest />
         </div>
         <h1 className='text-center mt-2'>
@@ -38,6 +39,9 @@ function App() {
         <ButtonComponent buttonName='Component Button 1' alertText='First Button Same Component' color='orange' />
         <ButtonComponent buttonName='Component Button 2' alertText='Second Button Same Component' color='purple' />
         <ButtonComponent buttonName='Component Button 3' alertText='Third Button Same Component' color='green' />
+        </div>
+        <div>
+          <FunctionComponent />
         </div>
       </div>
     </div>
